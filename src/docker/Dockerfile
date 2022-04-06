@@ -3,7 +3,7 @@ FROM ubuntu:latest
 WORKDIR /opt/letty/
 
 RUN apt update -y && apt install -y wget && \
-    wget -O "loom-jdk.tar.gz" "https://download.java.net/java/early_access/loom/5/openjdk-18-loom+5-274_linux-x64_bin.tar.gz" && \
+    wget -O "loom-jdk.tar.gz" "https://download.java.net/java/early_access/loom/5/openjdk-19-loom+5-429_linux-x64_bin.tar.gz" && \
     tar -xzvf "loom-jdk.tar.gz"
 
 ENV PATH="/opt/letty/jdk-18/bin:${PATH}"
